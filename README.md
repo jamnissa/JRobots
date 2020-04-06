@@ -3,7 +3,10 @@
 #### Структура проекта
 - [pcbDocuments](pcbDocuments)
     - [pcbDocuments.dwg](pcbDocuments/pcbDocuments.dwg)
-    - [Схема электрическая принципиальная](pcbDocuments/pdfDocuments/pcbDoc.pdf)
+    - [Схема электрическая структурная](pcbDocuments/pdfDocuments/E1.pdf)
+    - [Схема электрическая функциональная](pcbDocuments/pdfDocuments/E2.pdf)
+    - [Схема электрическая принципиальная](pcbDocuments/pdfDocuments/E3.pdf)
+    - [Перечень элементов](pcbDocuments/pdfDocuments/PE3.pdf)
 
 - [pcbBoard](pcbBoard)
     - [Robot.PrjPcb](pcbBoard/Robot.PrjPcb)
