@@ -38,40 +38,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\..\Altium Designer Library\Resistors\resistors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FFSMUCJD
-
-[Document2]
-DocumentPath=..\..\Altium Designer Library\Resistors\resistors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SFHXGXMJ
-
-[Document3]
 DocumentPath=Schematic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +54,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XMRQIBWC
 
-[Document4]
+[Document2]
 DocumentPath=pcbBoard.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,42 +71,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SPSGMXYJ
 
-[Document5]
-DocumentPath=..\..\Altium Designer Library\Capacitors\Capacitors.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document6]
-DocumentPath=..\..\Altium Designer Library\Capacitors\Capacitors.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
-DocumentPath=..\..\Altium Designer Library\Connectors\Connectors.PcbLib
+[Document3]
+DocumentPath=..\..\Altium-Designer-Library\Connectors\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -156,8 +88,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JKLPLYMP
 
-[Document8]
-DocumentPath=..\..\Altium Designer Library\Connectors\Connectors.SchLib
+[Document4]
+DocumentPath=..\..\Altium-Designer-Library\Connectors\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -173,8 +105,42 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZBEFZAOA
 
-[Document9]
-DocumentPath=..\..\Altium Designer Library\Crystal\Crystal.PcbLib
+[Document5]
+DocumentPath=..\..\Altium-Designer-Library\Inductor\inductor.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LCGIDQQN
+
+[Document6]
+DocumentPath=..\..\Altium-Designer-Library\Inductor\inductor.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IQTGTVIE
+
+[Document7]
+DocumentPath=..\..\Altium-Designer-Library\Diode\Diode.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -189,9 +155,43 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document8]
+DocumentPath=..\..\Altium-Designer-Library\Diode\Diode.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=..\..\Altium-Designer-Library\Capacitors\Capacitors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NSMAARMB
 
 [Document10]
-DocumentPath=..\..\Altium Designer Library\Crystal\Crystal.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Capacitors\Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -205,10 +205,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FTULIUXU
 
 [Document11]
-DocumentPath=..\..\Altium Designer Library\Diode\Diode.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\Crystal\Crystal.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -225,7 +225,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document12]
-DocumentPath=..\..\Altium Designer Library\Diode\Diode.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Crystal\Crystal.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -242,7 +242,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document13]
-DocumentPath=..\..\Altium Designer Library\Key\Key.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\Key\Key.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -259,7 +259,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document14]
-DocumentPath=..\..\Altium Designer Library\Key\Key.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Key\Key.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -276,7 +276,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\..\Altium Designer Library\Microchip\Microchip.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\Microchip\Microchip.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -293,7 +293,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\Altium Designer Library\Microchip\Microchip.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Microchip\Microchip.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -310,7 +310,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\..\Altium Designer Library\Module\Module.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\Module\Module.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -327,7 +327,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document18]
-DocumentPath=..\..\Altium Designer Library\Module\Module.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Module\Module.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -344,7 +344,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document19]
-DocumentPath=..\..\Altium Designer Library\STMicrocontrollers\STMicrocontrollers.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\Resistors\resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -361,7 +361,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document20]
-DocumentPath=..\..\Altium Designer Library\STMicrocontrollers\STMicrocontrollers.SchLib
+DocumentPath=..\..\Altium-Designer-Library\Resistors\resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -375,10 +375,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WBWFTRIG
+DocumentUniqueId=
 
 [Document21]
-DocumentPath=..\..\Altium Designer Library\Voltage Stabilizer\Voltage Stabilizer.PcbLib
+DocumentPath=..\..\Altium-Designer-Library\STMicrocontrollers\STMicrocontrollers.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -395,7 +395,41 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document22]
-DocumentPath=..\..\Altium Designer Library\Voltage Stabilizer\Voltage Stabilizer.SchLib
+DocumentPath=..\..\Altium-Designer-Library\STMicrocontrollers\STMicrocontrollers.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document23]
+DocumentPath=..\..\Altium-Designer-Library\Voltage Stabilizer\Voltage Stabilizer.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document24]
+DocumentPath=..\..\Altium-Designer-Library\Voltage Stabilizer\Voltage Stabilizer.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -530,7 +564,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MG2500 series Printer
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
