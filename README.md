@@ -12,8 +12,8 @@
     
 - [pcbCase](pcbCase)
     - [ball.dwg](pcbCase/ball.dwg)
-    - [battery case.dwg](pcbCase/battery case.dwg)
-    - [fixation for motor.dwg](pcbCase/fixation for motor.dwg)
+    - [battery case.dwg](pcbCase/BatteryCase.dwg)
+    - [fixation for motor.dwg](pcbCase/FixationForMotor.dwg)
     - [lidar.dwg](pcbCase/lidar.dwg)
     - [motor+wheel.dwg](pcbCase/motor+wheel.dwg)
     - [motor.dwg](pcbCase/motor.dwg)
