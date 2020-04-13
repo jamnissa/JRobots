@@ -1,0 +1,8 @@
+Added Component: Designator=BQ1(HPA17)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetBQ1_1 Pin=BQ1-1
+Added Pin To Net: NetName=GND Pin=BQ1-2
+Added Pin To Net: NetName=NetDD2_30 Pin=DD2-30
+Change Net Name : Old Net Name=NetDD2_16 New Net Name=PA6
+Added Member To Class: ClassName=Schematic Member=Component BQ1 
+Added Room: Name=Schematic
