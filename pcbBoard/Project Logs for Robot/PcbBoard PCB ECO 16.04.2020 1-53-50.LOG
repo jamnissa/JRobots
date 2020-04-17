@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=PA6 Pin=XS4-3
+Removed Pin From Net: NetName=NetDD2_17 Pin=XS4-4
+Added Pin To Net: NetName=NetDD2_17 Pin=XS4-3
+Added Pin To Net: NetName=PA6 Pin=XS4-4
+Change Net Name : Old Net Name=NetDD2_17 New Net Name=PA7
+Added Member To Class: ClassName=Schematic Member=Component C15 SMD0805
+Added Room: Name=Schematic

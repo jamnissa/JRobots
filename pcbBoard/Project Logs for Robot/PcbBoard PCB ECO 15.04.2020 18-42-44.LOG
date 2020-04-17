@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=NetDD2_32 Pin=DD2-32
+Added Pin To Net: NetName=NetDD2_32 Pin=XS5-4
+Added Net: Name=NetDD2_32
+Added Room: Name=Schematic
