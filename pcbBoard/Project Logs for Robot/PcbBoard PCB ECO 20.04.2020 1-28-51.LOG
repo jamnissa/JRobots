@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=GND Pin=DD3-18
+Added Pin To Net: NetName=GND Pin=DD2-20
+Added Pin To Net: NetName=GND Pin=DD2-44
+Added Pin To Net: NetName=AGND Pin=DD3-18
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R6-1
+Change Net Name : Old Net Name=GND New Net Name=BOOT
+Change Net Name : Old Net Name=NetBQ2_1 New Net Name=PD0
+Change Net Name : Old Net Name=NetBQ2_2 New Net Name=PD1
+Change Net Name : Old Net Name=NetDD2_10 New Net Name=PA0-PWMA
+Change Net Name : Old Net Name=NetDD2_11 New Net Name=PA1-PWMB
+Change Net Name : Old Net Name=NetDD2_21 New Net Name=PB10
+Change Net Name : Old Net Name=NetDD2_22 New Net Name=PB11
+Change Net Name : Old Net Name=NetDD2_29 New Net Name=PA8
+Change Net Name : Old Net Name=NetDD2_30 New Net Name=PA9
+Change Net Name : Old Net Name=NetDD2_34 New Net Name=SWDIO
+Change Net Name : Old Net Name=NetDD2_37 New Net Name=SWCLK
+Change Net Name : Old Net Name=NetDD3_1 New Net Name=AO1
+Change Net Name : Old Net Name=NetDD3_5 New Net Name=AO2
+Change Net Name : Old Net Name=NetDD3_7 New Net Name=BO2
+Change Net Name : Old Net Name=NetDD3_11 New Net Name=BO1
+Change Net Name : Old Net Name=PA3 New Net Name=PA7
+Added Pin To Net: NetName=NetDD2_46 Pin=DD2-46
+Added Pin To Net: NetName=NetDD2_46 Pin=R3-2
+Added Net: Name=NetDD2_46
+Added Pin To Net: NetName=PA2 Pin=DD1-20
+Added Pin To Net: NetName=PA2 Pin=DD2-12
+Added Net: Name=PA2
+Added Pin To Net: NetName=PA3 Pin=DD1-19
+Added Pin To Net: NetName=PA3 Pin=DD2-13
+Added Net: Name=PA3
+Added Pin To Net: NetName=PA4-AIN2 Pin=DD2-14
+Added Pin To Net: NetName=PA4-AIN2 Pin=DD3-22
+Added Net: Name=PA4-AIN2
+Added Pin To Net: NetName=PA5-AIN1 Pin=DD2-15
+Added Pin To Net: NetName=PA5-AIN1 Pin=DD3-21
+Added Net: Name=PA5-AIN1
+Added Pin To Net: NetName=PA11 Pin=DD1-22
+Added Pin To Net: NetName=PA11 Pin=DD2-32
+Added Net: Name=PA11
+Added Pin To Net: NetName=PB0-BIN1 Pin=DD2-18
+Added Pin To Net: NetName=PB0-BIN1 Pin=DD3-17
+Added Net: Name=PB0-BIN1
+Added Pin To Net: NetName=PB1-BIN2 Pin=DD2-19
+Added Pin To Net: NetName=PB1-BIN2 Pin=DD3-16
+Added Net: Name=PB1-BIN2
+Added Room: Name=Schematic

@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=XS2 NewDesignator=XP1
+Change Component Designator: OldDesignator=XS3 NewDesignator=XS2
+Change Component Designator: OldDesignator=XS4 NewDesignator=XS3
+Change Component Designator: OldDesignator=XS5 NewDesignator=XS4
+Added Member To Class: ClassName=Schematic Member=Component DD2 STM32F103C8T6
+Added Room: Name=Schematic
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=5mm

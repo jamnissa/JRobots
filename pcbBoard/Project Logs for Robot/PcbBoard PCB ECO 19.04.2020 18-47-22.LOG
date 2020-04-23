@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=PA3 Pin=DD2-13
+Added Pin To Net: NetName=PA3 Pin=DD2-17
+Added Pin To Net: NetName=NetDD2_13 Pin=DD2-13
+Added Pin To Net: NetName=NetDD2_13 Pin=DD3-22
+Added Net: Name=NetDD2_13
+Added Pin To Net: NetName=NetDD2_14 Pin=DD2-14
+Added Pin To Net: NetName=NetDD2_14 Pin=DD3-17
+Added Net: Name=NetDD2_14
+Added Pin To Net: NetName=NetDD2_15 Pin=DD2-15
+Added Pin To Net: NetName=NetDD2_15 Pin=DD3-16
+Added Net: Name=NetDD2_15
+Added Member To Class: ClassName=Schematic Member=Component XS4 
+Added Room: Name=Schematic
