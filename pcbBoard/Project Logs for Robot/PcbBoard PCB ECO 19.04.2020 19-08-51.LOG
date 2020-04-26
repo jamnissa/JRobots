@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=PA9 Pin=DD2-30
-Removed Pin From Net: NetName=PA10 Pin=DD2-31
-Removed Pin From Net: NetName=PA12 Pin=DD2-33
-Removed Pin From Net: NetName=NetDD2_29 Pin=XS4-4
-Added Pin To Net: NetName=NetDD2_29 Pin=XS4-3
-Added Pin To Net: NetName=NetDD2_30 Pin=DD2-30
-Added Pin To Net: NetName=NetDD2_30 Pin=XS4-4
-Added Net: Name=NetDD2_30
-Added Room: Name=Schematic

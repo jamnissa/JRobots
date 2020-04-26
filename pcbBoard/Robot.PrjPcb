@@ -463,7 +463,7 @@ GenerateClassCluster=0
 DocumentUniqueId=FONVGPMG
 
 [Document26]
-DocumentPath=PcbBoard_last.PcbDoc
+DocumentPath=PcbBoard_last2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
