@@ -383,9 +383,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>encoder.c</FileName>
+              <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\src\encoder.c</FilePath>
+              <FilePath>..\src\usart.c</FilePath>
             </File>
           </Files>
         </Group>
