@@ -1,21 +1,23 @@
 #include "stm32f10x.h" 
 #include "string.h"
 
-char buffer[8];
-int16_t volatile dist = 0;
-char tmp;
+char USART2_BUFFER[8];
+uint16_t i = 0;
+
 void USART2_IRQHandler(void) {
 	
-	if ((USART2->SR & USART_SR_RXNE) != 0) {
-		tmp = USART2->DR;
+	if ((USART2->SR & USART_SR_RXNE) != 0) { 
+	  
+		char tmp = USART2->DR;
 		
-		if (tmp == 0x59){ // CR			
-			memset(buffer, 0, 8);
-		}
-		
-		buffer[strlen(buffer)] = tmp;
+		if(tmp == 0x59) {
+			  i = 0;	
+			  memset(USART2_BUFFER, 0, 8);
+				USART2_BUFFER[i++] = tmp;
+		} else {
+				USART2_BUFFER[i++] = tmp;
+		}			
 	}
-	
 }
 
 void usart2Begin(uint32_t baudrate) {
@@ -60,44 +62,47 @@ void usart2TransmissionByte(uint8_t byte) {
 		USART2->DR = byte;
 }
 
+void pwmBegin(void) {
+	
+	RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+	
+	GPIOA->CRL &=~ (GPIO_CRL_MODE0 | GPIO_CRL_CNF0);
+	GPIOA->CRL |= (GPIO_CRL_CNF0_1 | GPIO_CRL_MODE0);
+	
+	GPIOA->CRL &=~ (GPIO_CRL_MODE1 | GPIO_CRL_CNF1);
+	GPIOA->CRL |= (GPIO_CRL_CNF1_1 | GPIO_CRL_MODE1);
+	
+	TIM2->PSC = 67; // 72000000 / 7200 / 1000
+	TIM2->ARR = 10;
+	
+	TIM2->CCR1 = 5; //CH1
+	TIM2->CCR2 = 3; //CH2
+	
+	TIM2->CCMR1 |=  TIM_CCMR1_OC1M_1 | TIM_CCMR1_OC1M_2;
+	TIM2->CCER  |=  TIM_CCER_CC1E;
+	TIM2->CCER  &=~ TIM_CCER_CC1P;
+	
+	TIM2->CCMR1 |=  TIM_CCMR1_OC2M_1 | TIM_CCMR1_OC2M_2;
+	TIM2->CCER  |=  TIM_CCER_CC2E;
+	TIM2->CCER  &=~ TIM_CCER_CC2P;
+	
+	TIM2->CR1 &=~ TIM_CR1_DIR;
+	TIM2->CR1 |= TIM_CR1_CEN;
+}
+
 int main() {
-	usart2Begin(115200);
+	
+	pwmBegin();
+	
+  //usart2Begin(115200);
+	
+	//int16_t volatile dist = 0;
+	
+	while(1) { 
+		
+		//dist = USART2_BUFFER[1] + (USART2_BUFFER[2] << 8);
 
-	//usart2TransmissionByte(0x42);
-	//usart2TransmissionByte(0x57);
-	//usart2TransmissionByte(0x02);
-	//usart2TransmissionByte(0x00);
-	//usart2TransmissionByte(0x00);
-	//usart2TransmissionByte(0x00);
-	//usart2TransmissionByte(0x06);
-	//usart2TransmissionByte(0x08);
-	
-	
-	
-	while(1) {
-		
-		dist = buffer[1];// + buffer[2] * 256;
-		
-	//	if (!strcmp(buffer, "Hi")){
-		//	usart2Transmission("Hello");
-			//memset(buffer, 0, 255);
-	//	}
-		
-		
-		// for(uint32_t i=0; i<240000;i++);
-		//		if (tmp == 0x59){ // CR
-			//buffer[0]=0x59;
-			//if (tmp == 0x59) {
-			//	buffer[1]=0x59;
-				//for(int i=2;i<9;i++)
-				//{ buffer[i]=tmp;
-				//}
-				//int check=buffer[0]+buffer[1]+buffer[2]+buffer[3]+buffer[4]+buffer[5]+buffer[6]+buffer[7];
-				//if(buffer[8]==(check&0xff)){
-				//	dist = buffer[1]+ buffer[2] * 256;
-				//}
-			//}				
-			
-		}
-
+		//for(uint32_t i=0; i<2400000;i++);	
 	}
+}	
