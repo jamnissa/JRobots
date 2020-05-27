@@ -126,7 +126,7 @@ void motorPwm(uint16_t left, uint16_t right) {
 }
 
 void motorLeft(uint16_t pwm) {
-	 motorPwm(pwm, pwm);
+	 motorPwm(pwm, pwm*0.3);
 	 
 	 GPIOA->BSRR = GPIO_BSRR_BR5; // AIN1 
 	 GPIOA->BSRR = GPIO_BSRR_BS4; // AIN2
