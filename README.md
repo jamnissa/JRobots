@@ -14,6 +14,7 @@
     - [Спецификация 2](pcbDocuments/pdfDocuments/Spec_corpus.pdf)
     - [Алгоритм](pcbDocuments/pdfDocuments/Algoritm.pdf)
     - [Схема сборки](pcbDocuments/pdfDocuments/Sborka.pdf)
+    - [Исследовательский лист](pcbDocuments/pdfDocuments/Search.pdf)
 
     
 - [pcbBoard](pcbBoard)
