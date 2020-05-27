@@ -19,7 +19,7 @@
 - [pcbBoard](pcbBoard)
     - [Robot.PrjPcb](pcbBoard/Robot.PrjPcb)
     - [Schematic.SchDoc](pcbBoard/Schematic.SchDoc)
-    - [PcbBoard.PcbDoc](pcbBoard/PcbBoard_last3.PcbDoc
+    - [PcbBoard.PcbDoc](pcbBoard/PcbBoard_last3.PcbDoc)
     
 - [pcbCase](pcbCase)
     - [ball.ipt](pcbCase/ball/ball.iam)
