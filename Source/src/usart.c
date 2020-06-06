@@ -1,5 +1,6 @@
 #include "stm32f10x.h" 
 #include "string.h"
+#include <stdlib.h>
 
 
 /* lidar begin */
@@ -126,7 +127,7 @@ void motorPwm(uint16_t left, uint16_t right) {
 }
 
 void motorLeft(uint16_t pwm) {
-	 motorPwm(pwm, pwm*0.3);
+	 motorPwm(pwm, pwm);
 	 
 	 GPIOA->BSRR = GPIO_BSRR_BR5; // AIN1 
 	 GPIOA->BSRR = GPIO_BSRR_BS4; // AIN2
@@ -165,6 +166,16 @@ void motorBack(uint16_t pwm) {
 	 GPIOB->BSRR = GPIO_BSRR_BS1; // BIN2
 }
 
+void motorStop() {
+	 motorPwm(0, 0);
+	 
+	 GPIOA->BSRR = GPIO_BSRR_BR5; // AIN1 
+	 GPIOA->BSRR = GPIO_BSRR_BR4; // AIN2
+	 
+	 GPIOB->BSRR = GPIO_BSRR_BR0; // BIN1
+	 GPIOB->BSRR = GPIO_BSRR_BR1; // BIN2
+}
+
 /* driver end */
 
 TIM_TypeDef * tim;
@@ -197,19 +208,41 @@ void usart2Begin(uint32_t baudrate) {
 	NVIC_EnableIRQ(USART2_IRQn);
 }
 
-char USART2_BUFFER[10];
+char USART2_BUFFER[20];
 uint16_t i = 0;
-char string [10];
+char string [20];
+
 void usart2Receive(void) {
-	if (!strcmp(USART2_BUFFER,"left50\r")) {
-      motorLeft(50);
-	}		
-	if (!strcmp(USART2_BUFFER,"right50\r")) {
-      motorRight(50);
-	}	
-	if (!strcmp(USART2_BUFFER,"right20\r")) {
-      motorRight(20);
+	if (!strcmp(USART2_BUFFER, "forward50\r")) {
+      motorForward(50);
 	}
+	
+	if (!strcmp(USART2_BUFFER, "forward80\r")) {
+      motorForward(80);
+	}
+		
+	if (!strcmp(USART2_BUFFER, "back\r")) {
+      motorBack(50);
+	}
+	
+	if (!strcmp(USART2_BUFFER, "right50\r")) {
+      motorRight(30);
+	    for(uint32_t i=0; i<1040000; i++);
+	   	motorForward(30);
+	}
+	
+	if (!strcmp(USART2_BUFFER, "left50\r")) {
+      motorLeft(30);	
+			for(uint32_t i=0; i<1040000; i++);
+	   	motorForward(30);
+	}
+	
+	if (!strcmp(USART2_BUFFER, "stop\r")) {
+      motorStop();	
+	}
+	
+	//for(uint32_t i=0; i<24000000; i++); 
+	//motorStop();
 }
 
 void USART2_IRQHandler(void) {
@@ -219,9 +252,9 @@ void USART2_IRQHandler(void) {
 		char tmp = USART2->DR;
 		
 		if(tmp == 0x0A) {
-		   i = 0;	
-			 usart2Receive();
-			 memset(USART2_BUFFER, 0, 10);
+		  i = 0;	
+			usart2Receive();
+			memset(USART2_BUFFER, 0, 10);
 			
 		} else {
 				USART2_BUFFER[i] = tmp;
@@ -230,8 +263,6 @@ void USART2_IRQHandler(void) {
 		}			
 	}
 }
-
-
 
 void usart2Transmission(char* str) {
 	
@@ -248,30 +279,76 @@ void usart2TransmissionByte(uint8_t byte) {
 		while(!(USART2->SR & USART_SR_TC));
 		USART2->DR = byte;
 }
-
 /* bluetooth end */
 
 
 int main() {
-	tim = TIM2;
 
-	
 	motorBegin();
+
 	volatile uint16_t speed = 30;
-	
+
 	usart2Begin(115200);
-	usart2Transmission("hi"); 
 	
-	while(1) { 
-//		motorLeft(speed);
-//		for(uint32_t i=0; i<24000000; i++);
-//		
-//		motorRight(speed);
-//		for(uint32_t i=0; i<24000000; i++);
+   	motorStop();
+		for(uint32_t i=0; i<5000000; i++);  
+		motorForward(speed);
+		for(uint32_t i=0; i<15000000; i++); 
+		
+	  motorStop();
+	  for(uint32_t i=0; i<1500000; i++);
+	
+		motorLeft(speed);
+		for(uint32_t i=0; i<1300000; i++); 
+	  
+	  motorStop();
+	  for(uint32_t i=0; i<100000; i++);
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<2500000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		motorRight(speed);
+		for(uint32_t i=0; i<1300000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<100000; i++);
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<7000000; i++);
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		motorLeft(speed);
+		for(uint32_t i=0; i<2900000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<21000000; i++);
+
+		motorLeft(speed);
+		for(uint32_t i=0; i<1600000; i++); 
+
 //		motorForward(speed);
-//		for(uint32_t i=0; i<24000000; i++);
-//		
-//    motorBack(speed);
-//    for(uint32_t i=0; i<24000000; i++);
+//		for(uint32_t i=0; i<3000000; i++); 
+		
+		motorStop();	
+	while(1) { 
+		
+		
+
+		
+		
+			
+		usart2Transmission("Hi");
+		
 	}
-}	
+
+}
+
