@@ -1,0 +1,8 @@
+Current Time: 07.06.2020 17:50:50
+Error Info: Заданный аргумент находится вне диапазона допустимых значений.
+Имя параметра: index
+Error Source: PresentationFramework
+Error Stack: в System.Windows.Controls.ItemCollection.GetItemAt(Int32 index)
+   в WINCC_TFMini.MainWindow.CMB_SCd_COM(Object sender, SelectionChangedEventArgs e) в D:\Program Files\Visual Studio Projects\2015\WINCC_TFMini\WINCC_TFMini\MainWindow.xaml.cs:строка 493
+Trigger Mode: System.Object GetItemAt(Int32)
+

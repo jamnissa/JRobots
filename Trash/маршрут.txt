@@ -1,0 +1,47 @@
+   	motorStop();
+		for(uint32_t i=0; i<5000000; i++);  
+		motorForward(speed);
+		for(uint32_t i=0; i<15000000; i++); 
+		
+	  motorStop();
+	  for(uint32_t i=0; i<1500000; i++);
+	
+		motorLeft(speed);
+		for(uint32_t i=0; i<1300000; i++); 
+	  
+	  motorStop();
+	  for(uint32_t i=0; i<100000; i++);
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<2500000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		motorRight(speed);
+		for(uint32_t i=0; i<1300000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<100000; i++);
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<7000000; i++);
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		motorLeft(speed);
+		for(uint32_t i=0; i<2900000; i++); 
+		
+		motorStop();
+	  for(uint32_t i=0; i<1000000; i++);
+		
+		
+		motorForward(speed);
+		for(uint32_t i=0; i<21000000; i++);
+
+		motorLeft(speed);
+		for(uint32_t i=0; i<1600000; i++); 
+
+//		motorForward(speed);
+//		for(uint32_t i=0; i<3000000; i++); 
