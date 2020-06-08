@@ -1,4 +1,5 @@
 .\objects\encoder.o: ..\src\encoder.c
+.\objects\encoder.o: ..\inc\encoder.h
 .\objects\encoder.o: C:\Users\jama1\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
 .\objects\encoder.o: .\RTE\_Target_1\RTE_Components.h
 .\objects\encoder.o: C:\Users\jama1\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h

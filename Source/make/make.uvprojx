@@ -383,9 +383,14 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>usart.c</FileName>
+              <FileName>jrobot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\src\usart.c</FilePath>
+              <FilePath>..\src\jrobot.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\motor.c</FilePath>
             </File>
           </Files>
         </Group>
