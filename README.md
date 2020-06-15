@@ -15,6 +15,7 @@
     - [Алгоритм](pcbDocuments/pdfDocuments/Algoritm.pdf)
     - [Схема сборки](pcbDocuments/pdfDocuments/Sborka.pdf)
     - [Исследовательский лист](pcbDocuments/pdfDocuments/Search.pdf)
+    - [Исследовательский лист2](pcbDocuments/pdfDocuments/Search2.pdf)
 
     
 - [pcbBoard](pcbBoard)
